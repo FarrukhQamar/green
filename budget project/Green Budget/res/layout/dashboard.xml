@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/outerMainLayout" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@color/white"
+	android:orientation="vertical">
+
+	<LinearLayout android:layout_width="match_parent"
+		android:layout_height="55dip" android:orientation="horizontal"
+		android:background="@color/headerColorGreen">
+
+		<TextView android:id="@+id/lbltitle" android:layout_width="fill_parent"
+			android:textColor="@android:color/white" android:text="GREEN BUDGET"
+			android:textSize="30sp" android:gravity="center" android:textStyle="bold"
+			android:layout_height="fill_parent" />
+
+
+	</LinearLayout>
+
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/top">
+		<com.green.DashboardLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:layout_marginTop="60dip"
+    android:layout_marginLeft="10dip"
+     android:layout_marginRight="10dip"
+      android:layout_marginBottom="10dip">
+    <!--  News Feed Button -->
+    <Button
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/icon"
+        android:text="Scan"
+         android:id="@+id/btnScan"
+        />
+ <Button
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/icon"
+        android:text="Search" android:id="@+id/btn_messages"/>
+ 
+    <!--  Friends Button -->
+       <Button
+        android:id="@+id/btn_bucket"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/icon"
+        android:text="My Cart" />
+    <Button style="@style/DashboardButton" android:drawableTop="@drawable/icon"
+	android:id="@+id/btnGetProduct" android:text="Pay Now" />
+  <!--  Places Button -->
+ 
+    <!--  Messages Button -->
+    
+   
+ 
+
+ 
+</com.green.DashboardLayout>
+</RelativeLayout>
+	</ScrollView>
+
+</LinearLayout>
