@@ -13,53 +13,42 @@
 			android:textSize="30sp" android:gravity="center" android:textStyle="bold"
 			android:layout_height="fill_parent" />
 
-
 	</LinearLayout>
-
-	<ScrollView android:layout_width="fill_parent"
+	
+	<RelativeLayout android:layout_width="fill_parent"
 		android:layout_height="fill_parent">
-<RelativeLayout android:layout_width="fill_parent"
-		android:layout_height="wrap_content"
-		android:id="@+id/top">
-		<com.green.DashboardLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:layout_weight="1"
-    android:layout_marginTop="60dip"
-    android:layout_marginLeft="10dip"
-     android:layout_marginRight="10dip"
-      android:layout_marginBottom="10dip">
-    <!--  News Feed Button -->
-    <Button
-        style="@style/DashboardButton"
-        android:drawableTop="@drawable/icon"
-        android:text="Scan"
-         android:id="@+id/btnScan"
-        />
- <Button
-        style="@style/DashboardButton"
-        android:drawableTop="@drawable/icon"
-        android:text="Search" android:id="@+id/btn_messages"/>
- 
-    <!--  Friends Button -->
-       <Button
-        android:id="@+id/btn_bucket"
-        style="@style/DashboardButton"
-        android:drawableTop="@drawable/icon"
-        android:text="My Cart" />
-    <Button style="@style/DashboardButton" android:drawableTop="@drawable/icon"
-	android:id="@+id/btnGetProduct" android:text="Pay Now" />
-  <!--  Places Button -->
- 
-    <!--  Messages Button -->
-    
-   
- 
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:id="@+id/top">
+			<com.green.DashboardLayout
+				xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:layout_weight="1" android:layout_marginTop="10dip"
+				android:layout_marginLeft="10dip" android:layout_marginRight="10dip"
+				android:layout_marginBottom="10dip">
+				
+				<!-- News Feed Button -->
+				<Button style="@style/DashboardButton" android:drawableTop="@drawable/basket_menu_button"
+					android:text="Scan" android:id="@+id/btnScan" />
+					
+				<Button style="@style/DashboardButton" android:drawableTop="@drawable/basket_menu_button"
+					android:text="Search" android:id="@+id/btn_messages" />
 
- 
-</com.green.DashboardLayout>
-</RelativeLayout>
-	</ScrollView>
+				<!-- Friends Button -->
+				<Button android:id="@+id/btn_bucket" style="@style/DashboardButton"
+					android:drawableTop="@drawable/basket_menu_button" android:text="My Cart" />
+					
+				<Button style="@style/DashboardButton" android:drawableTop="@drawable/basket_menu_button"
+					android:id="@+id/btnGetProduct" android:text="Pay Now" />
+				<!-- Places Button -->
+
+				<!-- Messages Button -->
+
+
+
+
+
+			</com.green.DashboardLayout>
+		</RelativeLayout>
+	</RelativeLayout>
 
 </LinearLayout>
