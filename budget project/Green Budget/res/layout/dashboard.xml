@@ -10,7 +10,7 @@
 
 		<TextView android:id="@+id/lbltitle" android:layout_width="fill_parent"
 			android:textColor="@android:color/white" android:text="GREEN BUDGET"
-			android:textSize="30sp" android:gravity="center" android:textStyle="bold"
+			android:textSize="30sp" android:gravity="center"
 			android:layout_height="fill_parent" />
 
 	</LinearLayout>
@@ -28,17 +28,17 @@
 				
 				<!-- News Feed Button -->
 				<Button style="@style/DashboardButton" android:drawableTop="@drawable/basket_menu_button"
-					android:text="Scan" android:id="@+id/btnScan" />
+					android:text="Incomes" android:id="@+id/btnScan" />
 					
 				<Button style="@style/DashboardButton" android:drawableTop="@drawable/basket_menu_button"
-					android:text="Search" android:id="@+id/btn_messages" />
+					android:text="Expenses" android:id="@+id/btn_messages" />
 
 				<!-- Friends Button -->
 				<Button android:id="@+id/btn_bucket" style="@style/DashboardButton"
-					android:drawableTop="@drawable/basket_menu_button" android:text="My Cart" />
+					android:drawableTop="@drawable/basket_menu_button" android:text="Common" />
 					
 				<Button style="@style/DashboardButton" android:drawableTop="@drawable/basket_menu_button"
-					android:id="@+id/btnGetProduct" android:text="Pay Now" />
+					android:id="@+id/btnGetProduct" android:text="Summary" />
 				<!-- Places Button -->
 
 				<!-- Messages Button -->

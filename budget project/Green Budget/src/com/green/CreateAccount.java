@@ -4,18 +4,19 @@ import com.green.common.Common;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class Main extends Activity {
+public class CreateAccount extends Activity {
 	
-	private TextView lblHeader;
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
-        lblHeader =(TextView)findViewById(R.id.lbltitle);
-		lblHeader.setTypeface(Common.getHeaderTypeFace(getApplicationContext()));
+        setContentView(R.layout.create_account);
+        
+        ViewGroup root = (ViewGroup)findViewById(R.id.outerMainLayout);
+		Common.setFont(root, Common.getHeaderTypeFace(getApplicationContext()));
         
     }
 }
