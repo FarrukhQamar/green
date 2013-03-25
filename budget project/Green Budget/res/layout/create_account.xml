@@ -8,10 +8,14 @@
 		android:layout_height="55dip" android:orientation="horizontal"
 		android:background="@color/headerColorGreen">
 
-		<TextView android:id="@+id/lbltitle" android:layout_width="fill_parent"
-			android:textColor="@android:color/white" android:text="GREEN BUDGET"
-			android:textSize="30sp" android:gravity="center" 
-			android:layout_height="fill_parent" />
+		<ImageView android:id="@+id/imageView1"
+			android:layout_width="wrap_content" android:layout_height="fill_parent"
+			android:src="@drawable/logo_white" android:layout_marginLeft="15dip"
+			android:layout_marginRight="5dip"
+			android:gravity="right" />
+		<TextView android:id="@+id/lbltitle" android:layout_width="wrap_content"
+			android:textColor="@android:color/white" android:textSize="30sp" android:gravity="center"
+			android:layout_height="fill_parent" android:text="Create an account"/>
 		
 
 	</LinearLayout>
@@ -24,14 +28,7 @@
 			android:orientation="vertical" android:paddingLeft="20sp"
 			android:paddingRight="20sp">
 
-			<TextView android:id="@+id/lblTitle" android:layout_width="match_parent"
-				android:layout_height="wrap_content" android:text="Create an account"
-				android:textColor="@color/headerColorLime" android:textSize="25sp"
-				android:textStyle="bold" android:gravity="center"
-				android:layout_marginTop="5sp">
-			</TextView>
-
-
+			
 			<EditText android:background="@drawable/rounded_cornet_text_box"
 				android:layout_width="fill_parent" android:layout_height="wrap_content"
 				android:layout_marginBottom="10dip" android:imeOptions="actionDone"
@@ -75,6 +72,8 @@
 				android:layout_marginTop="10dip" android:layout_height="50dip"
 				android:layout_weight="1" android:background="@drawable/button"
 				android:textColor="@android:color/white" android:textSize="23dip"
+				android:drawableRight="@drawable/arrow_right_white"
+				android:paddingRight="30dip"
 				android:text="CREATE" android:id="@+id/btnCreate"  />
 
 			<Button android:layout_width="fill_parent"
@@ -82,6 +81,8 @@
 				android:layout_weight="1" android:background="@drawable/button"
 				android:textColor="@android:color/white" android:textSize="23dip"
 				android:text="CANCEL" android:id="@+id/btnCancel"
+				android:drawableRight="@drawable/arrow_right_white"
+				android:paddingRight="30dip"
 				android:layout_marginBottom="20dip"  />
 
 

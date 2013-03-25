@@ -8,10 +8,15 @@
 		android:layout_height="55dip" android:orientation="horizontal"
 		android:background="@color/headerColorGreen">
 
-		<TextView android:id="@+id/lbltitle" android:layout_width="fill_parent"
-			android:textColor="@android:color/white" android:text="GREEN BUDGET"
-			android:textSize="30sp" android:gravity="center"
-			android:layout_height="fill_parent" />
+		<ImageView android:id="@+id/imageView1"
+			android:layout_width="wrap_content" android:layout_height="fill_parent"
+			android:src="@drawable/logo_white" android:layout_marginLeft="15dip"
+			android:layout_marginRight="25dip"
+			android:gravity="right" />
+		<TextView android:id="@+id/lbltitle" android:layout_width="wrap_content"
+		
+			android:textColor="@android:color/white" android:textSize="30sp" android:gravity="center"
+			android:layout_height="fill_parent" android:text="Dashboard"/>
 
 	</LinearLayout>
 	
@@ -27,17 +32,17 @@
 				android:layout_marginBottom="10dip">
 				
 				<!-- News Feed Button -->
-				<Button style="@style/DashboardButton" android:drawableTop="@drawable/basket_menu_button"
+				<Button style="@style/DashboardButton" android:drawableTop="@drawable/income_menu_button"
 					android:text="Incomes" android:id="@+id/btnScan" />
 					
-				<Button style="@style/DashboardButton" android:drawableTop="@drawable/basket_menu_button"
+				<Button style="@style/DashboardButton" android:drawableTop="@drawable/expense_menu_button"
 					android:text="Expenses" android:id="@+id/btn_messages" />
 
 				<!-- Friends Button -->
 				<Button android:id="@+id/btn_bucket" style="@style/DashboardButton"
-					android:drawableTop="@drawable/basket_menu_button" android:text="Common" />
+					android:drawableTop="@drawable/common_menu_button" android:text="Common" />
 					
-				<Button style="@style/DashboardButton" android:drawableTop="@drawable/basket_menu_button"
+				<Button style="@style/DashboardButton" android:drawableTop="@drawable/summary_menu_button"
 					android:id="@+id/btnGetProduct" android:text="Summary" />
 				<!-- Places Button -->
 

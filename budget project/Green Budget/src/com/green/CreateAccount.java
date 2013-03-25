@@ -5,7 +5,6 @@ import com.green.common.Common;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 public class CreateAccount extends Activity {
 	
