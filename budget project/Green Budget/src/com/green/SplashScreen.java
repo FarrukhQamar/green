@@ -1,3 +1,4 @@
+
 package com.green;
 
 import com.green.common.Common;
@@ -19,6 +20,11 @@ public class SplashScreen extends Activity{
 		ViewGroup root = (ViewGroup)findViewById(R.id.outerMainLayout);
 		Common.setFont(root, Common.getHeaderTypeFace(getApplicationContext()));
 		
+		/**
+		 * This section took from
+		 * URL : http://stackoverflow.com/questions/5486789/how-do-i-make-a-splash-screen-in-android
+		 * 
+		 */
 		new Handler().postDelayed(new Runnable(){
             public void run() {
                 /* Create an Intent that will start the Menu-Activity. */

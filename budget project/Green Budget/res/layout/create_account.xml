@@ -15,7 +15,7 @@
 			android:gravity="right" />
 		<TextView android:id="@+id/lbltitle" android:layout_width="wrap_content"
 			android:textColor="@android:color/white" android:textSize="30sp" android:gravity="center"
-			android:layout_height="fill_parent" android:text="Create an account"/>
+			android:layout_height="fill_parent" android:text="Create an Account"/>
 		
 
 	</LinearLayout>
