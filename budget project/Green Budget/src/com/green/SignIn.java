@@ -1,21 +1,4 @@
-/*
-   Green Budget is income and expense tracking software
-   Copyright (C) 2013  Damith Wanninayake
 
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
- 
- */
 package com.green;
 
 import com.green.common.Common;
@@ -32,6 +15,8 @@ import android.widget.TextView;
 public class SignIn extends Activity {
 	private Button btnLogin;
 	private TextView lblCreateAnAccount;
+	private TextView lblCreateResetPassword;
+	private TextView lblChangePassword;
 	
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -41,7 +26,12 @@ public class SignIn extends Activity {
 
 		btnLogin = (Button)findViewById(R.id.btnSignIn);
 		lblCreateAnAccount = (TextView)findViewById(R.id.lblCreateAnAccount);
+		lblCreateResetPassword = (TextView)findViewById(R.id.lblCreateResetPassword);
+		lblChangePassword = (TextView)findViewById(R.id.lblChangePassword);
+		
 		lblCreateAnAccount.setMovementMethod(LinkMovementMethod.getInstance());
+		lblCreateResetPassword.setMovementMethod(LinkMovementMethod.getInstance());
+		lblChangePassword.setMovementMethod(LinkMovementMethod.getInstance());
 		
 		btnLogin.setOnClickListener(new View.OnClickListener() {
 			
@@ -52,12 +42,26 @@ public class SignIn extends Activity {
 			}
 		});
 		
-		lblCreateAnAccount.setOnClickListener(new View.OnClickListener() {
-			
-			public void onClick(View arg0) {
-				
+		lblCreateAnAccount.setOnClickListener(new View.OnClickListener() {	
+			public void onClick(View arg0) {		
 				Intent create = new Intent(getApplicationContext(), CreateAccount.class);
 	        	startActivity(create);
+				
+			}
+		});
+		
+		lblCreateResetPassword.setOnClickListener(new View.OnClickListener() {	
+			public void onClick(View arg0) {		
+				Intent reset = new Intent(getApplicationContext(), ResetPassword.class);
+	        	startActivity(reset);
+				
+			}
+		});
+		
+		lblChangePassword.setOnClickListener(new View.OnClickListener() {	
+			public void onClick(View arg0) {		
+				Intent change = new Intent(getApplicationContext(), ChangePassword.class);
+	        	startActivity(change);
 				
 			}
 		});

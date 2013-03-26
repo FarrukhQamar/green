@@ -2,6 +2,7 @@
 <resources>
     <string name="hello">Hello World, Main!</string>
     <string name="app_name">Green Budget</string>
-    <string name="createAccount">Create an account</string>
-   
+    <string name="createAccount"> - Create an account</string>
+   <string name="resetPassword"> - Reset Password</string>
+   <string name="changePassword"> - Change Password</string>
 </resources>
