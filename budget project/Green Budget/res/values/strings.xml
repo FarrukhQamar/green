@@ -5,4 +5,5 @@
     <string name="createAccount"> - Create an account</string>
    <string name="resetPassword"> - Reset Password</string>
    <string name="changePassword"> - Change Password</string>
+    <string name="income_prompt">Income Type</string>
 </resources>

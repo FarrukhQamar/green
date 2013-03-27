@@ -22,10 +22,14 @@ package com.green;
 import com.green.common.Common;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 public class Dashboard extends Activity {
+	private Button btnIncome;
 	
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -33,5 +37,16 @@ public class Dashboard extends Activity {
 		
 		ViewGroup root = (ViewGroup)findViewById(R.id.outerMainLayout);
 		Common.setFont(root, Common.getHeaderTypeFace(getApplicationContext()));
+		
+		btnIncome = (Button)findViewById(R.id.btnIncome);
+		btnIncome.setOnClickListener(new View.OnClickListener() {
+			
+			public void onClick(View arg0) {
+				
+				Intent incomes = new Intent(getApplicationContext(), Incomes.class);
+				startActivity(incomes);
+				
+			}
+		});
 	}
 }

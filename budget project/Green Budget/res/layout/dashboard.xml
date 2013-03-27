@@ -33,7 +33,7 @@
 				
 				<!-- News Feed Button -->
 				<Button style="@style/DashboardButton" android:drawableTop="@drawable/income_menu_button"
-					android:text="Incomes" android:id="@+id/btnScan" />
+					android:text="Incomes" android:id="@+id/btnIncome" />
 					
 				<Button style="@style/DashboardButton" android:drawableTop="@drawable/expense_menu_button"
 					android:text="Expenses" android:id="@+id/btn_messages" />
