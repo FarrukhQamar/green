@@ -30,22 +30,37 @@ import android.widget.Button;
 
 public class Dashboard extends Activity {
 	private Button btnIncome;
-	
+	private Button btnExpenses;
+
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.dashboard);
-		
-		ViewGroup root = (ViewGroup)findViewById(R.id.outerMainLayout);
+
+		ViewGroup root = (ViewGroup) findViewById(R.id.outerMainLayout);
 		Common.setFont(root, Common.getHeaderTypeFace(getApplicationContext()));
-		
-		btnIncome = (Button)findViewById(R.id.btnIncome);
+
+		btnIncome = (Button) findViewById(R.id.btnIncome);
+		btnExpenses = (Button) findViewById(R.id.btnExpenses);
+
 		btnIncome.setOnClickListener(new View.OnClickListener() {
-			
+
 			public void onClick(View arg0) {
-				
-				Intent incomes = new Intent(getApplicationContext(), Incomes.class);
+
+				Intent incomes = new Intent(getApplicationContext(),
+						Incomes.class);
 				startActivity(incomes);
-				
+
+			}
+		});
+		
+		btnExpenses.setOnClickListener(new View.OnClickListener() {
+
+			public void onClick(View arg0) {
+
+				Intent expenses = new Intent(getApplicationContext(),
+						Expenses.class);
+				startActivity(expenses);
+
 			}
 		});
 	}

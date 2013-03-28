@@ -58,19 +58,19 @@ public final class R {
         public static final int LinearLayout01=0x7f070003;
         public static final int btnCancel=0x7f070009;
         public static final int btnCreate=0x7f070008;
+        public static final int btnExpenses=0x7f07000f;
         public static final int btnGetProduct=0x7f070011;
         public static final int btnIncome=0x7f07000e;
-        public static final int btnResCancel=0x7f070016;
-        public static final int btnReset=0x7f070015;
-        public static final int btnSignIn=0x7f070019;
+        public static final int btnResCancel=0x7f070017;
+        public static final int btnReset=0x7f070016;
+        public static final int btnSignIn=0x7f07001a;
         public static final int btn_bucket=0x7f070010;
-        public static final int btn_messages=0x7f07000f;
         public static final int imageView1=0x7f070001;
-        public static final int layoutCreateAccount=0x7f07001a;
-        public static final int lblChangePassword=0x7f07001d;
-        public static final int lblCreateAnAccount=0x7f07001b;
-        public static final int lblCreateResetPassword=0x7f07001c;
-        public static final int lblTitle=0x7f070017;
+        public static final int layoutCreateAccount=0x7f07001b;
+        public static final int lblChangePassword=0x7f07001e;
+        public static final int lblCreateAnAccount=0x7f07001c;
+        public static final int lblCreateResetPassword=0x7f07001d;
+        public static final int lblTitle=0x7f070018;
         public static final int lbltitle=0x7f070002;
         public static final int outerMainLayout=0x7f070000;
         public static final int spinner=0x7f070012;
@@ -80,20 +80,22 @@ public final class R {
         public static final int txtChangeOldPassword=0x7f070005;
         public static final int txtChangePasswordRe=0x7f070007;
         public static final int txtIncAmount=0x7f070013;
+        public static final int txtIncRemark=0x7f070014;
         public static final int txtPassword=0x7f07000b;
         public static final int txtPasswordRe=0x7f07000c;
         public static final int txtPasswordResetEmail=0x7f07000a;
-        public static final int txtResEmail=0x7f070014;
-        public static final int txtUserName=0x7f070018;
+        public static final int txtResEmail=0x7f070015;
+        public static final int txtUserName=0x7f070019;
     }
     public static final class layout {
         public static final int change_password=0x7f030000;
         public static final int create_account=0x7f030001;
         public static final int dashboard=0x7f030002;
-        public static final int incomes=0x7f030003;
-        public static final int reset_password=0x7f030004;
-        public static final int sign_in=0x7f030005;
-        public static final int spash_screen=0x7f030006;
+        public static final int expenses=0x7f030003;
+        public static final int incomes=0x7f030004;
+        public static final int reset_password=0x7f030005;
+        public static final int sign_in=0x7f030006;
+        public static final int spash_screen=0x7f030007;
     }
     public static final class string {
         public static final int app_name=0x7f050001;

@@ -36,7 +36,7 @@
 					android:text="Incomes" android:id="@+id/btnIncome" />
 					
 				<Button style="@style/DashboardButton" android:drawableTop="@drawable/expense_menu_button"
-					android:text="Expenses" android:id="@+id/btn_messages" />
+					android:text="Expenses" android:id="@+id/btnExpenses" />
 
 				<!-- Friends Button -->
 				<Button android:id="@+id/btn_bucket" style="@style/DashboardButton"
